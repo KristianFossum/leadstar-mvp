@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router';
+import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 
 export default function Home() {
-  const router = useRouter();
+  const navigate = useNavigate();
   useEffect(() => {
-    router.replace('/you');
-  }, [router]);
+    navigate('/you');
+  }, [navigate]);
   return null;
 }
